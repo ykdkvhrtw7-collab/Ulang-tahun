@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card" id="loginCard">
+    <h2>Hi love 💕</h2>
+    <p>Enter the password first!</p>
+    <input type="password" id="password" placeholder="password">
+    <button onclick="checkPassword()">Open 🎀</button>
+    <p class="hint">clue : your birthday</p>
+</div>
+
+<div class="hidden" id="mainPage">
+
+    <h1>Happy Birthday 🎂</h1>
+
+    <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/7c03QS94XIfcetKSNDhUdd?utm_source=generator"
+    width="100%"
+    height="152"
+    frameBorder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+    </iframe>
+
+    <div class="section">
+        <h2>Gallery 📸</h2>
+        <p>replace these photos with yours!</p>
+        <div class="gallery">
+            <img src="https://placehold.co/150x150">
+            <img src="https://placehold.co/150x150">
+            <img src="https://placehold.co/150x150">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Why You're Special 💕</h2>
+        <ul>
+            <li>You always make my days better</li>
+            <li>You stayed when things got hard</li>
+            <li>You make me feel comfortable</li>
+            <li>Your existence means a lot to me</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Letter For You 💌</h2>
+        <p class="letter">
+        happy birthday to the person who means so much to me.
+        thank you for existing, for making me laugh,
+        and for being part of my life.
+        i hope this year brings you happiness,
+        peace, and everything you deserve 💗
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Spin Gift 🎡</h2>
+        <button onclick="spinGift()">Spin Now!</button>
+        <p id="giftResult"></p>
+    </div>
+
+    <div class="section">
+        <h2>Mini Game 🎮</h2>
+        <p>Catch the heart 5 times!</p>
+        <button id="heartBtn" onclick="catchHeart()">💖</button>
+        <p id="score">Score: 0</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
